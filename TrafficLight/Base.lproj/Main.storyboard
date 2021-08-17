@@ -52,6 +52,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="changeTrafficLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="aF4-kW-Sj1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +70,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tL4-KX-HJx" secondAttribute="trailing" constant="107" id="ta5-j9-sYF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="SuC-ZK-tvF" id="Nmg-IY-h6t"/>
+                        <outlet property="redLightView" destination="6sb-8m-TuL" id="bT6-bp-mhO"/>
+                        <outlet property="startButton" destination="tL4-KX-HJx" id="IIe-jx-gOY"/>
+                        <outlet property="yellowLightView" destination="7P3-Mk-aRz" id="p8P-d3-gA7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
