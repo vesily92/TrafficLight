@@ -70,10 +70,8 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UqG-Aa-Ixd" secondAttribute="bottom" constant="10" id="GWF-TY-Y85"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UqG-Aa-Ixd" secondAttribute="trailing" constant="97" id="T6O-SD-4Jd"/>
                             <constraint firstItem="UqG-Aa-Ixd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFZ-1d-sLf"/>
                             <constraint firstItem="UqG-Aa-Ixd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="a31-y8-UF4"/>
-                            <constraint firstItem="UqG-Aa-Ixd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="p28-3F-wef"/>
                         </constraints>
                     </view>
                     <connections>
