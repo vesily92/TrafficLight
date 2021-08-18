@@ -60,7 +60,7 @@
                                             <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="changeTrafficLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="aF4-kW-Sj1"/>
+                                            <action selector="changeTrafficLights:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKk-WA-X1s"/>
                                         </connections>
                                     </button>
                                 </subviews>
