@@ -14,19 +14,21 @@ class ViewController: UIViewController {
     @IBOutlet var greenLightView: UIView!
     @IBOutlet var startButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.layer.cornerRadius = 100
-        yellowLightView.layer.cornerRadius = 100
-        greenLightView.layer.cornerRadius = 100
+        redLightView.layer.cornerRadius = 70
+        yellowLightView.layer.cornerRadius = 70
+        greenLightView.layer.cornerRadius = 70
         startButton.layer.cornerRadius = 20
         
-        redLightView.alpha = 1
+        redLightView.alpha = 0.3
         yellowLightView.alpha = 0.3
-        greenLightView.alpha = 03
+        greenLightView.alpha = 0.3
     }
 
     @IBAction func changeTrafficLights() {
+        
     }
     
 }
