@@ -27,22 +27,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeTrafficLights(_ sender: UIButton) {
+        startButton.setTitle("NEXT", for: .normal)
+        
         sender.tag += 1
         if sender.tag > 3 { sender.tag = 1 }
         
         switch sender.tag {
         case 1:
-            redLightView.alpha = 1;
-            yellowLightView.alpha = 0.3;
-            greenLightView.alpha = 0.3;
-            startButton.setTitle("NEXT", for: .normal)
+            redLightView.alpha = 1
+            yellowLightView.alpha = 0.3
+            greenLightView.alpha = 0.3
         case 2:
-            yellowLightView.alpha = 1;
-            redLightView.alpha = 0.3;
+            yellowLightView.alpha = 1
+            redLightView.alpha = 0.3
             greenLightView.alpha = 0.3
         default:
-            greenLightView.alpha = 1;
-            yellowLightView.alpha = 0.3;
+            greenLightView.alpha = 1
+            yellowLightView.alpha = 0.3
             redLightView.alpha = 0.3
         }
     }
