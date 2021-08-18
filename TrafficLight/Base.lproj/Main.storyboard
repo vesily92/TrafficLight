@@ -17,57 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gbb-Y4-E0Z">
-                                <rect key="frame" x="132" y="118" width="150" height="490"/>
+                            <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UqG-Aa-Ixd">
+                                <rect key="frame" x="97" y="54" width="220" height="798"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sb-8m-TuL">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <rect key="frame" x="40" y="0.0" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="teP-vq-fdu"/>
+                                            <constraint firstAttribute="height" constant="140" id="vby-Rd-zbz"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7P3-Mk-aRz">
-                                        <rect key="frame" x="0.0" y="170" width="150" height="150"/>
+                                        <rect key="frame" x="40" y="160" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="Xzg-ml-6r4"/>
+                                            <constraint firstAttribute="width" constant="140" id="c3h-bz-BJL"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuC-ZK-tvF">
-                                        <rect key="frame" x="0.0" y="340" width="150" height="150"/>
+                                        <rect key="frame" x="40" y="320" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="ZWP-hb-6IJ"/>
+                                            <constraint firstAttribute="height" constant="140" id="jpj-zc-Yfm"/>
+                                        </constraints>
                                     </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82y-DG-tp9">
+                                        <rect key="frame" x="0.0" y="480" width="220" height="249"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL4-KX-HJx">
+                                        <rect key="frame" x="0.0" y="749" width="220" height="49"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="AJC-aR-uPI"/>
+                                            <constraint firstAttribute="height" constant="49" id="hY2-qr-3R8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTrafficLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="aF4-kW-Sj1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="7P3-Mk-aRz" firstAttribute="height" secondItem="6sb-8m-TuL" secondAttribute="height" id="9Cj-Eb-j7m"/>
-                                    <constraint firstItem="SuC-ZK-tvF" firstAttribute="top" secondItem="7P3-Mk-aRz" secondAttribute="bottom" constant="20" id="AZo-j4-cJG"/>
-                                    <constraint firstItem="7P3-Mk-aRz" firstAttribute="top" secondItem="6sb-8m-TuL" secondAttribute="bottom" constant="20" id="KkW-dk-LV0"/>
-                                    <constraint firstItem="SuC-ZK-tvF" firstAttribute="height" secondItem="7P3-Mk-aRz" secondAttribute="height" id="PAb-ei-8zY"/>
-                                    <constraint firstItem="SuC-ZK-tvF" firstAttribute="width" secondItem="7P3-Mk-aRz" secondAttribute="width" id="UPq-kc-cP4"/>
-                                    <constraint firstItem="7P3-Mk-aRz" firstAttribute="width" secondItem="6sb-8m-TuL" secondAttribute="width" id="leh-Pw-v3u"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tL4-KX-HJx">
-                                <rect key="frame" x="107" y="756" width="200" height="49"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="6kR-25-fpO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeTrafficLights" destination="BYZ-38-t0r" eventType="touchUpInside" id="aF4-kW-Sj1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gbb-Y4-E0Z" secondAttribute="bottom" constant="254" id="9Jm-g0-h98"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tL4-KX-HJx" secondAttribute="bottom" constant="57" id="DGT-ku-jkR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gbb-Y4-E0Z" secondAttribute="trailing" constant="132" id="E9f-Hw-2xr"/>
-                            <constraint firstItem="gbb-Y4-E0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="Fya-E1-Y34"/>
-                            <constraint firstItem="tL4-KX-HJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="OwR-01-aCp"/>
-                            <constraint firstItem="gbb-Y4-E0Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="gfS-x4-Hmn"/>
-                            <constraint firstItem="tL4-KX-HJx" firstAttribute="top" secondItem="gbb-Y4-E0Z" secondAttribute="bottom" constant="148" id="kcB-Wt-4qw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tL4-KX-HJx" secondAttribute="trailing" constant="107" id="ta5-j9-sYF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UqG-Aa-Ixd" secondAttribute="bottom" constant="10" id="GWF-TY-Y85"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UqG-Aa-Ixd" secondAttribute="trailing" constant="97" id="T6O-SD-4Jd"/>
+                            <constraint firstItem="UqG-Aa-Ixd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFZ-1d-sLf"/>
+                            <constraint firstItem="UqG-Aa-Ixd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="a31-y8-UF4"/>
+                            <constraint firstItem="UqG-Aa-Ixd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="p28-3F-wef"/>
                         </constraints>
                     </view>
                     <connections>
